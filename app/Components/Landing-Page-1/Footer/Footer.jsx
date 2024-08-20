@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 // next image
-import Flogo from "@/public/Travlog assets/Frame 1.png";
+import Flogo from "@/public/logo.png";
 
 // react icons
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -17,13 +17,18 @@ const Footer = () => {
               <div className="container mx-auto px-6">
                 <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
                   <div className="col-span-4 md:col-span-8 lg:col-span-4 flex flex-col justify-start items-center gap-5">
-                    <Image
-                      src={Flogo}
-                      width={150}
-                      height={150}
-                      alt="Picture of the author"
-                      className="ml-2"
-                    />
+                    <div className="flex items-center gap-2 text-lg">
+                      <Image
+                        src={Flogo}
+                        width={50}
+                        height={50}
+                        alt="Picture of the author"
+                        className="ml-2"
+                      />
+                      <div>
+                        <h1>Globalapp</h1>
+                      </div>
+                    </div>
                     <p className="text-[#8c8b92] text-sm text-center">
                       Contrary to popular belief, Lorem Ipsum is not simply
                       random text. It has roots in a piece of classical Latin
